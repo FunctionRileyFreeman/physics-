@@ -1,61 +1,33 @@
 body {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
 }
 
 #container {
-    position: relative;
-    width: 100%;
-    height: 500px;
-    background-color: #f0f0f0;
-    overflow: hidden;
+    min-height: 500px;
+    height: auto;
+    overflow-y: auto;
+    border: 1px solid #999;
+    margin-right: 20px;
 }
 
-.circle, .square, .triangle {
-    position: absolute;
+button {
+    margin: 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    outline: none;
 }
 
-.circle {
-    width: 50px;
-    height: 50px;
-    background-color: red;
-    border-radius: 50%;
+button:hover {
+    background-color: #0056b3;
 }
 
-.square {
-    width: 50px;
-    height: 50px;
-    background-color: green;
-}
-
-.triangle {
-    width: 0;
-    height: 0;
-    border-left: 25px solid transparent;
-    border-right: 25px solid transparent;
-    border-bottom: 50px solid blue;
-}
-
-#floor {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 10px;
-    background-color: black;
-}
-
-#wallLeft, #wallRight {
-    position: absolute;
-    top: 0;
-    width: 10px;
-    height: 100%;
-    background-color: black;
-}
-
-#wallLeft {
-    left: 0;
-}
-
-#wallRight {
-    right: 0;
+button:focus {
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
 }
